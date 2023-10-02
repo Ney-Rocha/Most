@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- GERAIS - BODY TEXT --------------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #fff;
+    font-weight: 400;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+:root{
+    --gradient: linear-gradient( 
+        to right,
+        rgb(149 114 252 /1),
+        rgb(67 231  173 /1),
+        rgb(226 212 92 /1)
+    )
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6{
+    font-size: 17px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.special{
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0;
+}
+.strong{
+    font-weight: 700;
+}
+
+small{
+    font-size: 68%;
+    line-height: 1;
+}
+
+.action-text{
+    font-size:59px;
+    line-height: 59px;
+    margin-bottom: 5px;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- GERAIS - BODY COLOR --------------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.text-primary {
+    color: #2B2869 !important;
+}
+
+.text-secondary {
+    color: #00A651     !important;
+}
+
+.text-gray {
+    color: #898989 !important;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-muted{
+    color:#737373;
+}
+
+.text-gray-dark{
+    color:#343E59;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- GERAIS - BODY IMAGENS --------------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.responsive_img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-fluid-v {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+.main{
+    min-height: 200px;
+    padding: 0;
+    position: relative;
+}
+
+.mb-7{
+    margin-bottom: 5rem;
+}
+
+
+.backdrop:after {
+    content: " ";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- GERAIS BODY HACKING ---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ @media (min-width:1300px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.center{
+    text-align: center!important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pb-none{
+    padding-bottom: 0!important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.nowrap{
+    white-space: nowrap; 
+}
+
+.flip{
+    transform: rotate(180deg);
+}
+
+.pw-n{
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+.ph-n{
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.w-100{
+    width: 100%!important;
+}
+
+.mt-n-5{
+    margin-top: -25px!important;
+}
+
+@media screen {
+    .no-screen{
+        display: none !important;
+    }
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- GERAIS BODY BACKGROUND ---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.bg-white-light {
+    background-color: #E5E5E5;
+}
+
+.bg-white-middle {
+    background-color: #F8F8F8;
+}
+
+.bg-blue {
+    background-color: #1AA0E1;
+    color:#fff;
+}
+.bg-blue-middle{
+    background-color: #2B2869;
+    color:#fff;
+}
+.bg-blue-dark {
+    background-color: #242246;
+    color:#fff;
+
+}
+.bg-gray{
+    background-color:#E9EBE6;
+    color:#C8C8C8;
+}
+.bg-gray-light{
+    background-color:#F8F8F8;
+}
+.bg-gray-middle{
+    background-color:#EEF1F4;
+}
+
+.bg-gray-dark{
+    background-color:#DAE5F2;
+    color:#343E59;
+}
+
+.bg-orange{
+    background-color:#FF9900;
+    color: #fff;
+
+}
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+.bg-green{
+    background-color: #00A651;
+    color: #fff;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- GERAIS BODY BUTTONS ---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.btn {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    /* max-height: 42px; */
+    padding: 13px 40px;
+}
+
+.btn.btn-medium {
+    max-height: 36px;
+    padding: 10px 25px;
+
+}
+
+ .btn:hover,
+ .btn:focus,
+ .btn:active {
+     box-shadow: none!important;
+     outline: none !important;
+ }
+
+ .btn-primary {
+     background-color: #2E2C6F;
+     border: 1px solid #2E2C6F;
+ }
+
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color:  #28265f;
+    border: 1px solid  #28265f;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #28265f;
+    border-color: #28265f;
+    cursor: not-allowed;
+}
+
+.btn-outline-primary {
+    background-color: #FFF;
+    border: 1px solid #28265f;
+    color: #2E2C6F;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+    background-color:  #28265f;
+    border: 1px solid  #28265f;
+    color:#fff;
+}
+
+
+ .btn-secondary {
+     background-color: #00A651;
+     border: 1px solid #00A651;
+ }
+
+
+
+ .btn-secondary:hover,
+ .btn-secondary:focus,
+ .btn-secondary:active,
+ .btn-secondary:not(:disabled):not(.disabled):active {
+     background-color: #009849;
+     border: 1px solid #009849;
+ }
+
+ .btn-outline-secondary{
+    background-color: transparent;
+     border: 1px solid #00A651;
+ }
+
+ .btn-outline-secondary:hover,
+ .btn-outline-secondary:focus,
+ .btn-outline-secondary:active,
+ .btn-outline-secondary:not(:disabled):not(.disabled):active {
+     background-color: #00A651;
+     border: 1px solid #00A651;
+ }
+
+
+ .btn-gray {
+    background-color: #898989;
+    border: 1px solid #898989;
+    color:#fff;
+}
+
+
+
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active,
+.btn-gray:not(:disabled):not(.disabled):active {
+    background-color: #696969;
+    border: 1px solid #696969;
+    color:#fff;
+}
+
+
+ .btn-icon {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+ .icon-btn {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 8px;
+ }
+
+ .icon-btn i {
+     font-size: 12px;
+ }
+
+ .icon-btn i.icon-lg {
+     font-size: 18px;
+     margin-left: 8px;
+ }
+
+ .btn-action{
+    box-shadow: 0px 6px 0 rgba(5, 55, 126, .36)!important;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s;
+ }
+
+ .btn-action:hover{
+    box-shadow: 0px 6px 0 rgba(5, 55, 126, .46)!important;
+    transition: all 0.3s;
+ }
+
+ .btn-action:focus,
+ .btn-action:active{
+    box-shadow: 0px 5px 0px rgba(5, 55, 126, .46)!important;
+    transition: all 0.3s;
+ }
+
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- Headerr---------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: #0062a4;
+    display: flex;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    padding: 0;
+}
+.nav-item{
+    position: relative;
+    margin: 0 14px;
+}
+
+.nav-link{
+    font-size: 15px;
+    color: #ffffff;
+    font-weight:300;
+    text-transform: uppercase;
+    width: 100%;
+    height: 90px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus{    
+    color:#fff!important;
+}
+.nav-link:after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left:0;
+    width: 0;
+    height: 10px;
+    background-color: rgba(255, 75, 139, .5);
+    border-radius: 5px;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-link:hover::after{
+   width: 100%;
+}
+.nav-link.active::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left:0;
+    width: 100%;
+    height: 10px;
+    background-color: #ff4b8b;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.nav-item-especial{
+   display: flex;
+   justify-self: center;
+   align-items: center;
+   position: relative;
+   z-index: 1;
+   
+}
+
+.nav-link-especial{
+    padding: 7px 25px;
+    border: 2px solid transparent;
+    background: 
+    linear-gradient(#0062a4, #0062a4) padding-box,
+    linear-gradient(45deg,#ff4b8b, #659fc6, #659fc6, #ff4b8b) border-box ;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 18px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-link-especial:hover{
+    background: 
+    linear-gradient(#0062a4, #0062a4) padding-box,
+    linear-gradient(45deg, #ff4b8b, #ff4b8b, #659fc6, #ff4b8b, #ff4b8b) border-box ;
+}
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- Banner --------------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ 
+ .carousel-inner{
+    height: auto;
+ }
+
+ carousel-item{
+    height: 635px;
+ }
+ 
+ .carousel-indicators{
+    margin-bottom: 30px;
+ }
+ .carousel-indicators.indicators-bullets button{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color:#0062a4;
+    opacity: 1;
+ }
+ .carousel-indicators.indicators-bullets button.active{    
+    background-color:#ff4b8b;
+ }
+
+ 
