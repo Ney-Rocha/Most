@@ -29,6 +29,7 @@ h1 {
     font-size: 40px;
 }
 
+
 h2 {
     font-size: 36px;
 }
@@ -146,11 +147,23 @@ small{
         max-width: 1140px;
     }
 }
-
+address{
+    margin: 0;
+}
 ul{
     margin: 0;
     list-style: none;
     padding: 0;
+}
+
+
+section{
+    padding: 30px 40px ;
+}
+
+
+.no-border{
+    border:none;
 }
 
 .center{
@@ -358,6 +371,7 @@ ul{
  -----------------  FORM  Control-------------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 textarea.form-control,
+.form-select,
 .form-control {
     display: block;
     width: 100%;
@@ -374,6 +388,7 @@ textarea.form-control {
     min-height: 100px;
 }
 
+.form-select:focus,
 textarea.form-control:focus,
 .form-control:focus {
     color: #495057;
@@ -404,8 +419,9 @@ textarea.form-control.group-danger ,
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     background-color: transparent;
+    border:none;
  }
 
 .card-icon{
@@ -421,13 +437,24 @@ textarea.form-control.group-danger ,
     height: 145px;
     border-radius: 22px;
 }
-section{
-    padding: 30px 40px ;
+
+.card-icon.icon-rounded{
+    border: 4px solid transparent;
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg, #659fc6, #ff4b8b) border-box ;
+    width: 110px;
+    height: 110px;
+    padding: 20px;
+    border-radius:50%
 }
 
+.card-body{
+    padding: 0 20px;
+}
 
-.no-border{
-    border:none;
+.card-body.card-content{
+    padding: 0 40px;
 }
  
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -557,11 +584,10 @@ section{
     overflow: hidden;    
  }
 
- .banner-content{
+ .carousel-content{
     width: 100%;
     position: absolute;
     top: 0;
-    bottom: 0;
  }
 
  .content-action{
@@ -621,3 +647,107 @@ section{
 .content-form{
     padding: 20px 0;
 }
+
+.content-form.form-central{
+    padding: 20px 0;
+    max-width: 535px;
+    margin: 20px auto;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- FOOTER --------------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+ .footer{
+    padding: 20px 0;
+    display: flex;
+   align-items: center;
+ }
+
+.brand-footer{
+    width: 70px;
+    height: 70px;
+}
+ .content-footer{
+    display: flex;
+ }
+
+ .address-footer{
+    padding:15px 0;
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+   margin-left: 25px;
+ }
+
+ address p{
+    font-size: 16px;
+ }
+
+ .address-footer h4 a{
+    text-decoration: none;
+    color:#fff;
+ }
+ .social-footer{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+ }
+
+ .social-footer span{
+    font-size: 16px;
+ }
+.icon-content{
+    display: flex;    
+    align-items: center;
+}
+
+.social-icon{
+    height: 48px;
+    width:48px;
+    background-color: #ff4b8b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+ 
+.social-icon i{
+    font-size:28px
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- PAGE FORM CAPTACAO --------------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.banner-content{
+    position:relative;
+    width: 100%;
+   overflow: hidden;
+    height: 445px;
+}
+ .banner-image{
+    width: 100%;
+    position: absolute;
+    top: 0;
+   
+ }
+
+ .banner-action{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 445px;
+ }
+ 
+ .banner-action h1{
+    font-size: 66px;
+ }
+
+ @media (min-width: 1600px){
+    .banner-content,
+    .banner-action{
+        height: 450px;
+     }
+ }
