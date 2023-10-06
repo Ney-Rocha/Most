@@ -73,6 +73,13 @@ small{
     line-height: 1;
 }
 
+.font-normal{
+    font-weight: 400!important;
+}
+
+.font-light{
+    font-weight:300!important;
+}
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- GERAIS - BODY COLOR --------------------
