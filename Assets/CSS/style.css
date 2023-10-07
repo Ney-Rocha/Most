@@ -119,6 +119,11 @@ small{
     object-fit: cover;
 }
 
+.wrapper-recaptcha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .main{
     min-height: 200px;
     padding: 0;
@@ -169,7 +174,10 @@ section{
 }
 
 .wrapper-text{
-    
+    width: 100%;
+    max-width:930px;
+    padding: 0  10px;
+    margin: 0 auto;
 }
 .no-border{
     border:none;
@@ -563,6 +571,11 @@ textarea.form-control.group-danger ,
     linear-gradient(45deg, #ff4b8b, #ff4b8b, #659fc6, #ff4b8b, #ff4b8b) border-box ;
 }
 
+.nav-item-especial .nav-link-especial.active{
+    background-color: #ff4b8b!important;
+    background: none;
+}
+
 @media (max-width: 1200px){
     .header{
         height: auto;
@@ -663,6 +676,8 @@ textarea.form-control.group-danger ,
     margin: 20px auto;
 }
 
+
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- FOOTER --------------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -733,7 +748,7 @@ textarea.form-control.group-danger ,
     position:relative;
     width: 100%;
    overflow: hidden;
-    height: 445px;
+    height: 397px;
 }
  .banner-image{
     width: 100%;
@@ -751,7 +766,7 @@ textarea.form-control.group-danger ,
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 445px;
+    height: 397px;
  }
  
  .banner-action h1{
@@ -761,7 +776,7 @@ textarea.form-control.group-danger ,
  @media (min-width: 1600px){
     .banner-content,
     .banner-action{
-        height: 450px;
+        height: 445px;
      }
  }
 
@@ -773,8 +788,9 @@ textarea.form-control.group-danger ,
 }
 
 .box-header{
+    width: 100%;
     height: 350px;
-    width: 350px;
+    max-width: 350px;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -817,9 +833,16 @@ textarea.form-control.group-danger ,
     border-radius: 10px;
     margin: 0 auto 12px;
  }
+ .wrapper_box-action{
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+ }
 
  .box-action{
-    padding: 25px 0 0;
+    padding: 10px 0 0;
     position: absolute;
     bottom: 40px;
+    margin-top: 20px;
+    z-index: 0;
  }
