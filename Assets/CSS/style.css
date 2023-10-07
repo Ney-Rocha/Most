@@ -168,7 +168,9 @@ section{
     padding: 30px 40px ;
 }
 
-
+.wrapper-text{
+    
+}
 .no-border{
     border:none;
 }
@@ -737,7 +739,11 @@ textarea.form-control.group-danger ,
     width: 100%;
     position: absolute;
     top: 0;
-   
+ }
+
+ .banner-image.banner-footer{
+    top: initial;
+    bottom: 0;
  }
 
  .banner-action{
