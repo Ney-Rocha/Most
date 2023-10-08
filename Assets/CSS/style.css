@@ -814,7 +814,11 @@ textarea.form-control.group-danger ,
     align-items: center;
 }
 
-.social-icon{
+.icon-content a{
+    text-decoration:none;
+}
+
+ .social-icon{
     height: 48px;
     width:48px;
     background-color: #ff4b8b;
@@ -823,10 +827,11 @@ textarea.form-control.group-danger ,
     justify-content: center;
     align-items: center;
     margin-left: 15px;
+    color: #fff;
 }
  
 .social-icon i{
-    font-size:28px
+    font-size:28px;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
