@@ -37,6 +37,10 @@ h2.reduce {
     font-size: 34px;
 }
 
+.ft-30{
+    font-size:30px;
+}
+
 h3 {
     font-size: 24px;
 }
@@ -130,10 +134,6 @@ small{
     position: relative;
 }
 
-.mb-7{
-    margin-bottom: 5rem;
-}
-
 
 .backdrop:after {
     content: " ";
@@ -179,6 +179,11 @@ section{
     padding: 0  10px;
     margin: 0 auto;
 }
+
+.wrapper-text.wrapper-small{
+    max-width:675px;
+}
+
 .no-border{
     border:none;
 }
@@ -221,12 +226,65 @@ section{
     padding-bottom: 0!important;
 }
 
+.mb-7{
+    margin-bottom: 70px!important;
+}
+
 .mt-lg{
-    margin-top: 30px;
+    margin-top: 30px!important;
+}
+.mt-30{
+    margin-top: 30px!important;
+}
+
+.mt-40{
+    margin-top: 40px!important;
+}
+.mb-40{
+    margin-bottom: 40px;
 }
 
 .mb-lg{
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
+}
+ 
+.mb-xl{
+    margin-bottom: 60px !important;
+}
+.mb-7x{
+    margin-bottom: 150px !important;
+}
+
+.ml-10{
+    margin-left:10px !important;
+}
+.ml-15{
+    margin-left:15px !important;
+}
+.ml-20{
+    margin-left:20px !important;
+}
+.ml-30{
+    margin-left:30px !important;
+}
+.ml-40{
+    margin-left:40px !important;
+}
+
+.mr-1{
+    margin-right:10px !important;
+}
+.mr-15{
+    margin-right:15px !important;
+}
+.mr-2{
+    margin-right:20px !important;
+}
+.mr-3{
+    margin-right:30px !important;
+}
+.mr-4{
+    margin-right:40px !important;
 }
 
 @media screen {
@@ -264,7 +322,7 @@ section{
     font-size: 22px;
     font-weight: 700;
     line-height: 1.2;
-    padding: 13px 40px;
+    padding: 13px 50px;
     border-radius: 25px;
 }
 
@@ -361,6 +419,23 @@ section{
         linear-gradient(45deg, #0062a4, #ff4b8b) border-box ;
  } 
 
+ .btn-muted {
+    background-color: #bbb4a8;
+    border: 1px solid #bbb4a8;
+    color:#ffffff;
+}
+
+
+
+ .btn-muted:hover,
+ .btn-muted:focus,
+ .btn-muted:active,
+ .btn-muted:not(:disabled):not(.disabled):active {
+     background-color: #9f998e;
+     border: 1px solid #9f998e;
+     color:#ffffff;
+ }
+
  .btn-icon {
      display: flex;
      justify-content: center;
@@ -384,6 +459,11 @@ section{
      margin-left: 8px;
  }
  
+ .btn-right{
+    margin-left:18px
+ }
+
+
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  -----------------  FORM  Control-------------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -676,6 +756,14 @@ textarea.form-control.group-danger ,
     margin: 20px auto;
 }
 
+.content-form.content-form-small{
+    max-width:535px;
+}
+
+.content-buttons{
+    display: flex;
+    justify-content: center;
+}
 
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -845,4 +933,44 @@ textarea.form-control.group-danger ,
     bottom: 40px;
     margin-top: 20px;
     z-index: 0;
+ }
+
+ /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ---------------- Finance result    --------------------
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+ .finance-result{
+    border: 3px solid transparent;
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg,  #0062a4, #ff4b8b) border-box ;
+    border-radius: 24px;
+    padding: 30px 40px 25px;
+    max-width: 540px;
+    margin: 0 auto;
+    display: block;
+ }
+
+ .result-list{
+    width:100%;
+ }
+
+ .result-item{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #bbb4a8;
+    font-size: 18px;
+    line-height: 2.2;
+ }
+
+ .result-item:last-child{
+    
+    border-bottom:none;
+ }
+
+ .icon-message{
+    height: 96px;
+    width: 96px;
+    margin: 0 auto;
  }

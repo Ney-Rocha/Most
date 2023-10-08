@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=h1, initial-scale=1.0">
     <title>Most</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="preconnect" href="https://www.google.com">
-    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
     <link href="Assets/CSS/style.css" rel="stylesheet">
 </head>
 <body>
@@ -68,72 +66,106 @@
                </div>
             </div><!--Container-fluid-->
 
-            <section  class="text-simulator">
+            <section  class="text-simulator pb-none">
                 <div class="container">
                     <div class="wrapper-text wrapper-small">
-                      <h1  class="text-center text-secondary ft-30 mt-lg mb-lg">Simule o financiamento imobiliário com os principais fornecedores do mercado.</h1>
-                      <div class="wrapper-text">
-                          <div class="row">
-                              <div class="col-md-12">
-                                <p class="text-center mt-lg mb-4" >
-                                  Acreditamos que o seu Crédito Imobiliário deve ser simples e ágil, por isso trazemos as condições dos principais bancos privados para você. Saiba agora as melhores taxas para o seu financiamento.
-                                </p>
-                              </div><!--content-text-->
-                          </div><!--row-->
-                        </div><!--wrapper-text-->  
+                        <h1  class="text-center text-secondary text-uppercase ft-30 mt-5">Simulação Concluída!</h1>                        
                     </div> <!--wrapper-text wrapper-small-->
                 </div><!--container-->
-            </section>
+            </section><!--text-simulator-->
 
             <section class="simulador mb-7x">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="text-primary mb-4 text-uppercase text-center ft-30">Quero meu financiamento imobiliário</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                          <div class="content-form form-central content-form-small">
-                           
-                            <form action="">
-                                <div class="mb-3">
-                                  <input type="text" placeholder="Nome" class="form-control">
-                                </div>
-                                <div class="mb-3">
-                                  <input type="E-mail" placeholder="E-mail" class="form-control">
-                                </div>
-                                <div class=" mb-4">
-                                  <input type="text" placeholder="Telefone (com DDD)" class="form-control">
-                                </div>
-                                <div class="mb-5 wrapper-recaptcha">
-                                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-                                    
-                                </div>
-                                
-                                <div class="form-check mb-5">
-                                    <input class="form-check-input" type="checkbox" value="" id="privacyPolicy">
-                                    <label for="privacyPolicy">
-                                       
-                                        Ao enviar os seus dados, você confirma que está de acordo com a
-                                        <span class="strong">
-                                            <a href="#">Política de Privacidade.</a>
-                                        </span>
-                                        e os
-                                        <span class="strong">
-                                            <a href="#">Termos de Uso.</a>
-                                        </span>
-                                        da <span class="text-uppercase">Most</span>
-                                    </label>
-                                </div>
-                                
-                                <div class="w-100 d-block ">
-                                  <a href="simulador2.html" class="btn btn-block btn-primary text-uppercase">Avançar</a>
-                                </div>
-                            </form><!--form-->
-                          </div><!--content-form-->                            
-                        </div><!--col-->
-                    </div><!--row-->
+                    <div class="finance-result mb-xl">
+                        <div class="finance-result-header">
+                            <h3 class="text-center text-primary text-uppercase">
+                                Valor do financiamento
+                            </h3>
+                            <h2 class="text-center text-secondary">
+                                R$ 
+                                <span>
+                                    250.000,00
+                                </span>
+                            </h2>
+                        </div> <!--finance-result-header-->
+                        <div class="finance-result-body mt-40">
+                            <ul class="result-list">
+                                <li class="result-item">
+                                    <div>
+                                        Valor do Imóvel
+                                    </div>
+                                    <div class="strong">
+                                        R$ <span>350.000,00</span>
+                                    </div>
+                                </li>
+                                <li class="result-item">
+                                    <div>
+                                        valor das parcelas
+                                    </div>
+                                    <div class="strong">
+                                        R$ <span>7.081,26</span>
+                                    </div>
+                                </li>
+                                <li class="result-item">
+                                    <div>
+                                        Amortização
+                                    </div>
+                                    <div class="strong">
+                                        Price
+                                    </div>
+                                </li>
+                                <li class="result-item">
+                                    <div>
+                                        Taxa efetiva
+                                    </div>
+                                    <div class="strong">
+                                        <span>10.49</span>% a.a
+                                    </div>
+                                </li>
+                                <li class="result-item">
+                                    <div>
+                                        Prazo
+                                    </div>
+                                    <div class="strong">
+                                        <span>42</span> meses
+                                    </div>
+                                </li>
+                                <li class="result-item">
+                                    <div>
+                                        Tipo de imóvel
+                                    </div>
+                                    <div class="strong">
+                                        Residencial
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!--finance-result-body-->
+                    </div><!--finance result-->
+                    
+                   
+                    <div class="wrapper-text wrapper-small">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="text-primary text-uppercase text-center">
+                                    Transformar sua simulação em proposta
+                                </h3>
+                            </div><!--col-12-->
+                            <div class="col-md-12">
+                                <p class="text-center mt-3 mb-4" >
+                                    Ao clicar em prosseguir, um consultor entrará em contato com você em aproximadamente 1 dia útil para dar continuidade ao financiamento.
+                                </p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="content-buttons btn-group-inline">
+                                    <a href="simulador.html" class="btn btn-primary text-uppercase">
+                                         Recalcular Simulação
+                                    </a>
+                                    <a href="simulador4.html" class="btn btn-right btn-secondary text-uppercase">Prosseguir</a>
+                                </div><!--content-buttons-->
+                            </div>
+                        </div><!--row-->
+                    </div><!--wrapper-text-->
+
                 </div><!--container-->
             </section><!--section-->
 
@@ -185,14 +217,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/064d097444.js" crossorigin="anonymous"></script>
-    <script async src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-        // If reCAPTCHA is still loading, grecaptcha will be undefined.
-        grecaptcha.ready(function(){
-          grecaptcha.render("container", {
-            sitekey: "ABC-123"
-          });
-        });
-      </script>
+    
 </body>
 </html>
