@@ -789,6 +789,10 @@ textarea.form-control.group-danger ,
         justify-content: center;
     }
 
+    .navbar-collapse.justify-content-end.collapse.show{
+        padding-bottom: 30px;
+    }
+
  }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
