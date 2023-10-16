@@ -680,6 +680,7 @@ textarea.form-control.group-danger ,
     background-color: #0062a4;
     display: flex;
     position: relative;
+    z-index: 10;
 }
 .navbar{
     width: 100%;
