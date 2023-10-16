@@ -85,6 +85,58 @@ small{
     font-weight:300!important;
 }
 
+
+@media screen and (max-width:600px){
+    h1 {
+        font-size: 22px;
+    }
+    
+    
+    h2 {
+        font-size: 20px;
+    }
+    h2.reduce {
+        font-size: 16px;
+    }
+    
+    .ft-30{
+        font-size:14px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    h4 {
+        font-size: 16px;
+    }
+    
+    h5 {
+        font-size: 15px;
+    }
+    
+    h6{
+        font-size: 14px;
+    }
+    
+    p {
+        font-size: 13px;
+        line-height: 1.2;
+        margin: 0;
+    }
+    
+    .special{
+        font-size: 9px;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    .mob-none{
+        display: none;
+    }
+    
+}
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- GERAIS - BODY COLOR --------------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -118,9 +170,10 @@ small{
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .responsive_img {
-    width: auto;
+    width: auto;    
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .wrapper-recaptcha{
@@ -319,11 +372,14 @@ section{
 
 
 .btn {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
     padding: 13px 50px;
     border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:hover,
@@ -419,6 +475,14 @@ section{
         linear-gradient(45deg, #0062a4, #ff4b8b) border-box ;
  } 
 
+ .btn-gradient:hover,
+ .btn-gradient:focus,
+ .btn-gradient:active,
+ .btn-gradient:not(:disabled):not(.disabled):active {
+    color:#fff;
+    border-color: transparent;
+ }
+
  .btn-muted {
     background-color: #bbb4a8;
     border: 1px solid #bbb4a8;
@@ -463,6 +527,13 @@ section{
     margin-left:18px
  }
 
+ @media screen and (max-width:600px){
+    .btn{
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+ }
 
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  -----------------  FORM  Control-------------------
@@ -506,6 +577,14 @@ textarea.form-control.group-danger ,
     border-color: #ff0000;
     color: #FF0000;
 }
+
+@media  screen and (max-width:600px) {
+    textarea.form-control, 
+    .form-select, 
+    .form-control {
+        font-size: 14px;
+    }
+}
  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- cards--------------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -520,6 +599,10 @@ textarea.form-control.group-danger ,
     background-color: transparent;
     border:none;
  }
+
+ card-body.card-content h4{
+    margin-bottom: 15px;
+}
 
 .card-icon{
     display: flex;
@@ -552,6 +635,40 @@ textarea.form-control.group-danger ,
 
 .card-body.card-content{
     padding: 0 40px;
+}
+
+@media screen and (max-width:600px) {
+    .card{
+        margin-bottom: 70px;
+    }
+    .card-header{
+       margin-bottom: 10px;
+    }
+
+    .card-body.card-content h4{
+        margin-bottom: 10px;
+    }
+
+    .card-icon.icon-rounded {
+        width: 80px;
+        height: 80px;
+        padding: 20px;
+        border-radius: 50%;
+    }
+
+    .card-icon.icon-square {
+        width: 80px;
+        height: 80px;
+        border-radius: 18px;
+    }
+
+    .card-icon {
+        padding: 15px;
+    }
+
+    .card-body.card-content {
+        padding: 0 20px;
+    }
 }
  
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -667,6 +784,11 @@ textarea.form-control.group-danger ,
         display: flex;
         flex-direction: column;
     }
+
+    .nav-item-especial {
+        justify-content: center;
+    }
+
  }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -719,14 +841,40 @@ textarea.form-control.group-danger ,
  }
 
  @media (min-width: 1600px){
-    .carousel-item,
+    .content-action,
     .carousel-item{
         
         height: 635px;
         
      }
+
+    .carousel-indicators {
+        margin-bottom: 15px;
+    }
+
+     .carousel-indicators.indicators-bullets button {
+        width: 15px;
+        height: 15px;
+    }
  }
 
+
+ @media screen and (max-width:600px){
+    .content-action,
+    .carousel-item{
+        
+        height: 455px;
+        
+     }
+
+     .carousel-content {
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        bottom: 0;
+        right: 100%;
+    }
+ }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- Section simulador--------------------
@@ -765,6 +913,12 @@ textarea.form-control.group-danger ,
     justify-content: center;
 }
 
+@media screen and (max-width:600px) {
+    .simulator-description {
+        padding: 25px 0;
+        text-align: center;
+    }
+}
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- FOOTER --------------------
@@ -834,6 +988,44 @@ textarea.form-control.group-danger ,
     font-size:28px;
 }
 
+@media screen and (max-width:600px) {
+      
+
+    .content-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .address-footer {
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 25px;
+        width: 100%;
+    }
+    .address-footer h4 a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .brand-footer{
+        margin-top: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    address p {
+        font-size: 12px;
+    }
+
+    .social-footer {        
+        flex-direction: column;
+    }
+
+    .social-footer span {
+        margin-bottom: 15px;
+    }
+}
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- PAGE FORM CAPTACAO --------------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -871,8 +1063,18 @@ textarea.form-control.group-danger ,
     .banner-action{
         height: 445px;
      }
+    
  }
 
+ @media screen and (max-width:600px) {
+    .banner-action h1 {
+        font-size: 30px;
+    }
+
+    .banner-content.banner-footer{
+        height: 170px;
+    }
+ }
  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- Box    --------------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -906,7 +1108,7 @@ textarea.form-control.group-danger ,
 
  .box-body{
     border: 4px solid #0062a4;
-    padding: 40px;
+    padding: 40px 30px;
     border-radius:20px;
     position:relative;
     display: flex;
@@ -916,7 +1118,7 @@ textarea.form-control.group-danger ,
     margin-bottom: 30px;
  }
 
- .box-icon{
+ .box-icon {
     width: 85px;
     height: 85px;
     background-color: #ff4b8b;
@@ -924,7 +1126,19 @@ textarea.form-control.group-danger ,
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    margin: 0 auto 12px;
+    margin: 0 auto 15px;
+    padding: 20px;
+}
+
+ .body-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 115px;
+    position: relative;
+    padding: 20px 0;
+    margin-top: 20px;
  }
  .wrapper_box-action{
     margin-top: 10px;
@@ -933,11 +1147,28 @@ textarea.form-control.group-danger ,
  }
 
  .box-action{
-    padding: 10px 0 0;
     position: absolute;
-    bottom: 40px;
-    margin-top: 20px;
+    bottom: 0px;
     z-index: 0;
+ }
+
+ @media  (max-width:600px) {
+    .box-header {        
+        height: 230px;
+        padding: 20px;
+    }
+
+    .box-icon{
+        width: 85px;
+        height: 85px;       
+     }
+
+    .box-body {
+        height: auto;
+    }
+    .body-footer{
+        height: 40px;
+    }
  }
 
  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -978,4 +1209,10 @@ textarea.form-control.group-danger ,
     height: 96px;
     width: 96px;
     margin: 0 auto;
+ }
+
+ @media (max-width:600px){
+    .finance-result {
+        padding: 30px 12px 25px;
+    }
  }
