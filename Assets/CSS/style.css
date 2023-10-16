@@ -794,6 +794,7 @@ textarea.form-control.group-danger ,
         padding-bottom: 30px;
     }
 
+   
  }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -1157,6 +1158,18 @@ textarea.form-control.group-danger ,
     z-index: 0;
  }
 
+ @media (max-width:1200px){
+    .box-body {
+        
+        height: auto;
+    }
+
+    .box-header {       
+        height: 300px;
+    }
+
+ }
+
  @media  (max-width:600px) {
     .box-header {        
         height: 230px;
@@ -1174,7 +1187,10 @@ textarea.form-control.group-danger ,
     .body-footer{
         height: 40px;
     }
+
  }
+
+
 
  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- Finance result    --------------------
