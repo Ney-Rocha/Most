@@ -786,6 +786,7 @@ textarea.form-control.group-danger ,
     }
 
     .nav-item-especial {
+        margin-top: 30px;
         justify-content: center;
     }
 
