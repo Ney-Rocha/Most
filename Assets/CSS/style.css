@@ -636,7 +636,9 @@ textarea.form-control.group-danger ,
 .card-body.card-content{
     padding: 0 40px;
 }
-
+.vh-custom{
+    min-height: 230px;
+}
 @media screen and (max-width:600px) {
     .card{
         margin-bottom: 70px;
@@ -668,6 +670,10 @@ textarea.form-control.group-danger ,
 
     .card-body.card-content {
         padding: 0 20px;
+    }
+
+    .vh-custom{
+        min-height: auto;
     }
 }
  
@@ -948,9 +954,11 @@ textarea.form-control.group-danger ,
  .address-footer{
     padding:15px 0;
     display: flex;
-    flex-direction: column;
-   align-items: flex-start;
+   align-items: center;
    margin-left: 25px;
+ }
+ .address-footer a{
+   text-decoration: none;
  }
 
  address p{
