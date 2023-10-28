@@ -59,7 +59,7 @@ class FormSubmit {
             });
 
             this.displaySuccess();
-            window.location.href = "http://127.0.0.1:5500/simulador5.html";
+            window.location.href = "/simulador5.html";
 
         } catch (error) {
             this.displayError("Não foi possível enviar o formulário. Por favor, tente novamente.");
