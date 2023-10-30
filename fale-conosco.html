@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Most</title>
+    <link rel="shortcut icon" href="/Assets/Imagens/Brand/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="preconnect" href="https://www.google.com">
-    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="Assets/CSS/style.css" rel="stylesheet">
 </head>
 <body>
@@ -39,10 +39,10 @@
                           <a class="nav-link" href="financiamento-imoveis.html" >Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="fale-conosco.html" >Fale Conosco</a>
+                            <a class="nav-link active" href="fale-conosco.html" aria-current="form Captação">Fale Conosco</a>
                         </li>
                         <li class="nav-item-especial">
-                            <a class="nav-link-especial active" aria-current="Simulador" href="simulador.html" >Simulador</a>
+                            <a class="nav-link-especial" href="simulador.html" >Simulador</a>
                         </li>
                       </ul>
                   </div>
@@ -58,90 +58,50 @@
                <div class="banner-content">
                 <figure>
                   <div class="banner-image">
-                      <img src="Assets/Imagens/Banners/bannerSimulator.png" alt="..." class="responsive_img">                    
+                    <img src="Assets/Imagens/Banners/bannerFormCaptacao.png" alt="..." class="responsive_img">                    
                   </div>
-                </figure>
-                
+                </figure>                
                 <div class="banner-action">
-                    <h1 class="text-white text-center text-normal">
-                        Simulador de <br class="mob-none">Crédito Imobiliário
+                    <h1 class="text-white text-center">
+                        Simule agora e <br>garanta as melhores taxas
                     </h1>
                 </div>
 
                </div>
             </div><!--Container-fluid-->
 
-            <section  class="text-simulator">
-                <div class="container">
-                    <div class="wrapper-text wrapper-small">
-                      <h1  class="text-center text-secondary ft-30 mt-lg mb-lg">Simule o financiamento imobiliário com os principais fornecedores do mercado.</h1>
-                      <div class="wrapper-text">
-                          <div class="row">
-                              <div class="col-md-12">
-                                <p class="text-center mt-lg mb-4" >
-                                  Acreditamos que o seu Crédito Imobiliário deve ser simples e ágil, por isso trazemos as condições dos principais bancos privados para você. Saiba agora as melhores taxas para o seu financiamento.
-                                </p>
-                              </div><!--content-text-->
-                          </div><!--row-->
-                        </div><!--wrapper-text-->  
-                    </div> <!--wrapper-text wrapper-small-->
-                </div><!--container-->
-            </section>
-
-            <section class="simulador mb-7x">
+            <section class="simulador">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="text-primary mb-4 text-uppercase text-center ft-30">Quero meu financiamento imobiliário</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                          <div class="content-form form-central content-form-small">
-                           
-                            <form action="">
+                          <div class="content-form form-central">
+                            <form action="https://formsubmit.co/ajax/rocha.brasil@hotmail.com" method="POST" data-form>
                                 <div class="mb-3">
-                                  <input type="text" placeholder="Nome" class="form-control">
+                                  <input type="text" name="nome" id="Nome" placeholder="Nome" class="form-control" required>
                                 </div>
                                 <div class="mb-3">
-                                  <input type="E-mail" placeholder="E-mail" class="form-control">
+                                  <input type="email" name="email" id="email" placeholder="E-mail" class="form-control" required>
                                 </div>
-                                <div class=" mb-4">
-                                  <input type="text" placeholder="Telefone (com DDD)" class="form-control">
-                                </div>
-
-                                 <div class="mb-4  ">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Selecione o produto</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="mt-5 mb-4 wrapper-recaptcha">
-                                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-                                    
+                                <div class=" mb-3">
+                                  <input type="text" name="fone" id="telefone" placeholder="Telefone (com DDD)" class="form-control sp_celphones">
                                 </div>
 
+                                <div class="mb-4">
+                                  <label for="message" class="label-control mb-2">Mensagem</label>
+                                  <textarea class="form-control" name="mensagem"  id="message"></textarea>
+                                </div>
                                 <div class="form-check mb-5">                                   
-                                  <label for="terms-politic" class="check-control">
-                                    <input type="checkbox" value="Aceita os termos e condições?" name="Aceita os termos e condições?" id="terms-politic">
-                                    <div class="">
-                                      Ao enviar os seus dados, você confirma que está de acordo com a
-                                      <strong class="strong">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#politicaPrivacidade">Política de Privacidade.</a>
-                                      </strong> 
-                                      e os 
-                                      <strong class="strong">                                
-                                        <a href="#"  data-bs-toggle="modal" data-bs-target="#termoUso" >Termos de Uso.</a>
-                                      </strong>
-                                    </div>                                  
-                                    <span></span>
-                                  </label>
+                                    <label for="terms-politic" class="check-control">
+                                      <input type="checkbox" value="Aceita os termos e condições?" name="Aceita os termos e condições?" id="terms-politic">
+                                      <div class="">Estou ciente e aceito a política de privacidade. 
+                                        <a href="#"  data-bs-toggle="modal" data-bs-target="#termsPolict"> Saiba mais</a>.</div>                                  
+                                      <span></span>
+                                    </label>
                                 </div>
-
+                                
+                                
                                 <div class="w-100 d-block ">
-                                  <a href="simulador2.html" class="btn btn-block btn-primary text-uppercase">Avançar</a>
+                                  <button class="btn btn-block btn-primary text-uppercase" data-button>Enviar</button>
                                 </div>
                             </form><!--form-->
                           </div><!--content-form-->                            
@@ -208,9 +168,9 @@
       </div><!--footer-->
     </footer><!--footer-->
 
-
-    <!-- Modal -->  
-    <div class="modal fade" id="politicaPrivacidade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+     <!-- Modal -->  
+     <div class="modal fade" id="termsPolict" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
@@ -381,41 +341,19 @@
     </div>
   
 
-    <!-- Modal -->
-    <div class="modal fade" id="termoUso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog  modal-dialog-centered modal-lg modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Termos de Uso</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p class="mb-5 text-center"><small>Data da última alteração: 25/10/2023</small></p>
-            <p class="strong">Em construção</p>
-            <p> Nosso termo de uso esta em fase de desenvolvimento, em breve estará disponivel.</p>
-          </div>
-          <div class="modal-footer">
-            <!-- <a href="#" target="_blank" type="download" class="btn btn-outline-primary">Baixar</a> -->
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <script   src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <script src="https://kit.fontawesome.com/064d097444.js" crossorigin="anonymous"></script>
+    <script src="Assets/Plugins/jQuery-Mask-Plugin-master/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+    <script src="Assets/JS/mask.js"></script>
+    
+    <script defer src="Assets/JS/app.js"></script>
 
     <script src="Assets/JS/main.js"></script>
-    <script async src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-        // If reCAPTCHA is still loading, grecaptcha will be undefined.
-        grecaptcha.ready(function(){
-          grecaptcha.render("container", {
-            sitekey: "ABC-123"
-          });
-        });
-      </script>
 </body>
 </html>

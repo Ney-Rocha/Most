@@ -34,9 +34,20 @@ class FormSubmit {
     getFormObject() {
         const formObject = {};
         const fields = this.form.querySelectorAll("[name]");
+
         fields.forEach((field) => {
-            formObject[field.getAttribute("name")] = field.value;
+            
+            if (field.type === "checkbox") {
+                formObject[field.getAttribute("name")] = field.checked ? "sim" : "não";
+            } else if (field.tagName === "TEXTAREA") {
+                formObject[field.getAttribute("name")] = field.value;
+            }  else {
+                formObject[field.getAttribute("name")] = field.value;
+            }
         });
+
+        formObject['mensagem'] = this.form.querySelector("[name='mensagem']").value;
+
         return formObject;
     }
 

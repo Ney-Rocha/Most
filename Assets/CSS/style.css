@@ -279,6 +279,10 @@ section{
     padding-bottom: 0!important;
 }
 
+.p-none{
+    padding: 0!important;
+}
+
 .mb-7{
     margin-bottom: 70px!important;
 }
@@ -936,6 +940,9 @@ textarea.form-control.group-danger ,
  ------------- RADIO BUTTON / CHECKBOX ---------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+ .form-check{
+    padding-left: 10px;
+ }
 .check-control {
     margin: 5px 20px 5px 0;
     font-size: 14px;
@@ -1311,12 +1318,13 @@ textarea.form-control.group-danger ,
 
 .select-customizado::after {
     content: '\f0d7';
-    font-family: 'Font Awesome 6 Free'; /* Família de fontes do Font Awesome */
+    font-family: 'Font Awesome 6 Free'; 
     font-weight: 900;
+    content: '\f0d7';
     position: absolute;
-    right: 10px; /* Ajuste a posição conforme necessário */
-    top: 50%; /* Ajuste a posição conforme necessário */
-    transform: translateY(-50%); /* Centraliza verticalmente */
-    pointer-events: none; /* Evita que o ícone seja clicável */
-    font-size: 20px; /* Ajuste o tamanho do ícone conforme necessário */
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    pointer-events: none; 
+    font-size: 20px; 
 }
