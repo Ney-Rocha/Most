@@ -370,6 +370,9 @@ section{
     background-color: transparent;
 }
 
+.bg-banner{
+    background-color: #cdc8c2;
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- buttons ---------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -784,6 +787,10 @@ textarea.form-control.group-danger ,
     background: none;
 }
 
+.nav-item-especial.item-mobile{
+    display: none;
+}
+
 @media (max-width: 1200px){
     .header{
         height: auto;
@@ -805,9 +812,51 @@ textarea.form-control.group-danger ,
         padding-bottom: 30px;
     }
 
+    .nav-item-especial{
+        display: none;
+    }
+
+    .nav-item-especial.item-mobile{
+        display: block;
+        margin-top: 0;
+        padding: 2px 7px;
+        font-size: 10px;
+        position: absolute;
+        right: 120px;
+        top: 10px;
+    }
+
+    .navbar-toggler{
+        border: none;
+        color: #ff4b8b!important;
+        padding: 0 15px;
+        margin-right: 5px;
+        filter: grayscale(50%);
+        position:relative
+    }
+    
+
+   span.navbar-toggler-icon{
+        color: #ff4b8b!important;
+        display: block;
+    }
    
  }
 
+ @media (min-width:761px) and (max-width:1000px){
+    .nav-item-especial.item-mobile{
+       
+        right: 180px;
+    }
+}
+
+@media (max-width:760px){
+    .nav-item-especial.item-mobile{
+       
+        right: 80px;
+    }
+}
+ 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++
  ---------------- Banner --------------------
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -858,6 +907,10 @@ textarea.form-control.group-danger ,
  }
 
  @media (min-width: 1600px){
+    .carousel-content{
+        display: flex;
+        justify-content: center;
+    }
     .content-action,
     .carousel-item{
         
